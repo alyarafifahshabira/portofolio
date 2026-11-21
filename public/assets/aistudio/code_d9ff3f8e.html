@@ -1,0 +1,784 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alya Rafifah Shabira — Editorial Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'bg-cream': '#F3EDE4',
+        'bg-cream-dark': '#E8DFD3',
+        'bg-dark': '#11100F',
+        'ink': '#141312',
+        'ink-muted': '#484645',
+        'paper': '#F5F0E8',
+        'paper-muted': '#D1C4B7',
+        'gold': '#B0926A',
+        'gold-accessible': '#735A37',
+        'rule-light': '#D1C4B7',
+        'rule-dark': '#372F26',
+        'light-primary': '#8C6D46',
+        'light-on-primary': '#FFFFFF',
+        'light-surface': '#F3EDE4',
+        'light-surface-container-low': '#E8DFD3',
+        'light-on-surface': '#141312',
+        'light-on-surface-variant': '#484645',
+        'light-outline': '#D1C4B7',
+        'dark-primary': '#B0926A',
+        'dark-on-primary': '#11100F',
+        'dark-surface': '#11100F',
+        'dark-surface-container': '#1C1B1A',
+        'dark-on-surface': '#F5F0E8',
+        'dark-on-surface-variant': '#D1C4B7',
+        'dark-outline': '#372F26',
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '2px',
+        'DEFAULT': '0px',
+        'md': '4px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '36px',
+        'gutter-2xl': '48px',
+        'section-y': '96px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Cormorant Garamond"', 'sans-serif'],
+        'headline': ['"Cormorant Garamond"', 'sans-serif'],
+        'title': ['"Cormorant Garamond"', 'sans-serif'],
+        'body': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'eyebrow': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-masthead': ['160px', { lineHeight: '136px', letterSpacing: '-4px', fontWeight: '400' }],
+        'display-masthead-mobile': ['32px', { lineHeight: '34px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'display-lg': ['56px', { lineHeight: '58px', letterSpacing: '-1px', fontWeight: '400' }],
+        'display-lg-mobile': ['32px', { lineHeight: '36px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'headline-lg': ['48px', { lineHeight: '52px', letterSpacing: '-0.8px', fontWeight: '400' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '32px', letterSpacing: '-0.4px', fontWeight: '400' }],
+        'headline-md': ['36px', { lineHeight: '40px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'headline-md-mobile': ['24px', { lineHeight: '28px', letterSpacing: '-0.3px', fontWeight: '400' }],
+        'headline-sm': ['28px', { lineHeight: '32px', letterSpacing: '-0.3px', fontWeight: '400' }],
+        'title-lg': ['20px', { lineHeight: '26px', letterSpacing: '0.8px', fontWeight: '500' }],
+        'body-md': ['14px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'eyebrow': ['11px', { lineHeight: '16px', letterSpacing: '2px', fontWeight: '500' }],
+        'eyebrow-sm': ['10px', { lineHeight: '14px', letterSpacing: '1.8px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'hover-link': '300ms',
+        'card-zoom': '800ms',
+        'section-reveal': '900ms',
+      },
+      transitionDelay: {
+        'hover-link': '0ms',
+        'card-zoom': '0ms',
+        'section-reveal': '0ms',
+      },
+      transitionTimingFunction: {
+        'hover-link': 'cubic-bezier(0.22, 1, 0.36, 1)',
+        'card-zoom': 'cubic-bezier(0.22, 1, 0.36, 1)',
+        'section-reveal': 'cubic-bezier(0.22, 1, 0.36, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #F3EDE4;
+      color: #141312;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .silk-overlay {
+      background-image:
+        radial-gradient(ellipse 75% 55% at 15% 18%, rgba(255, 255, 255, 0.35), transparent 65%),
+        radial-gradient(ellipse 65% 50% at 85% 75%, rgba(223, 211, 195, 0.4), transparent 65%);
+    }
+    .masthead-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(52px, 14.2vw, 225px);
+      line-height: 0.84;
+      letter-spacing: -0.025em;
+    }
+    .subheadline-hero {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(22px, 2.4vw, 34px);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .signature-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(26px, 2.8vw, 38px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .monogram-watermark {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 84px;
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      color: rgba(176, 146, 106, 0.45);
+    }
+    @keyframes spinSeal {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .seal-spin {
+      animation: spinSeal 28s linear infinite;
+      transform-origin: center;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    dialog::backdrop {
+      background: rgba(17, 16, 15, 0.76);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .seal-spin { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body class="bg-bg-cream text-ink font-body min-h-[1024px]" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <div class="min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+    <!-- 1. HERO SECTION -->
+    <header class="relative bg-bg-cream silk-overlay overflow-hidden min-h-[1024px] flex flex-col justify-between" data-stitch-vh="min-h-[1024px]===min-h-screen">
+      <!-- Top Utility Bar -->
+      <nav aria-label="Primary Navigation" class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl pt-gutter-lg pb-gutter-md flex items-center justify-between gap-gutter-md relative z-10">
+        <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-ink">
+          S1 TEKNIK INFORMATIKA · IT PLN
+        </span>
+
+        <div class="hidden lg:flex items-center gap-gutter-xl">
+          <a href="#experience" class="font-eyebrow text-eyebrow uppercase text-ink hover:text-gold-accessible transition-colors duration-hover-link">EXPERIENCE</a>
+          <a href="#capabilities" class="font-eyebrow text-eyebrow uppercase text-ink hover:text-gold-accessible transition-colors duration-hover-link">CAPABILITIES</a>
+          <a href="#education" class="font-eyebrow text-eyebrow uppercase text-ink hover:text-gold-accessible transition-colors duration-hover-link">EDUCATION</a>
+          <a href="#achievements" class="font-eyebrow text-eyebrow uppercase text-ink hover:text-gold-accessible transition-colors duration-hover-link">ACHIEVEMENTS</a>
+          <a href="#contact" class="font-eyebrow text-eyebrow uppercase text-ink hover:text-gold-accessible transition-colors duration-hover-link">CONTACT</a>
+        </div>
+
+        <div class="flex items-center gap-gutter-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="text-gold">
+            <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="currentColor"></path>
+          </svg>
+          <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-ink tabular-nums">2026</span>
+        </div>
+      </nav>
+
+      <!-- Giant Masthead Title -->
+      <div class="w-full px-gutter-md md:px-gutter-xl mt-gutter-sm relative z-[1] select-none">
+        <h1 class="masthead-title text-center text-ink uppercase w-full">PORTFOLIO</h1>
+      </div>
+
+      <!-- Hero Foreground Grid -->
+      <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl lg:-mt-12 grid grid-cols-1 lg:grid-cols-[1fr_1.25fr_0.6fr] items-end gap-gutter-xl relative z-[2]">
+        <!-- Left Column -->
+        <div class="pb-gutter-lg lg:pb-16 flex flex-col items-start order-2 lg:order-1">
+          <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold-accessible">
+            INFORMATICS ENGINEERING STUDENT
+          </span>
+          <h2 id="hero-headline" class="subheadline-hero uppercase text-ink mt-gutter-sm mb-gutter-md text-balance">
+            MAHASISWA BARU<br>INSTITUT TEKNOLOGI PLN<br>JURUSAN S1 TEKNIK INFORMATIKA
+          </h2>
+          <div class="w-10 h-px bg-gold mb-gutter-md" aria-hidden="true"></div>
+          <p id="hero-about" data-design-text-token="body-sm" class="font-body text-body-sm text-ink-muted max-w-md text-pretty">
+            I am a first-year Informatics Engineering student with a strong drive to learn, grow, and contribute through education. I actively participate in various organizational activities that have honed my communication, teamwork, and sense of responsibility. I also have a keen interest in technology and design.
+          </p>
+          <p id="hero-signature" class="signature-name uppercase text-gold-accessible mt-gutter-lg">
+            ALYA RAFIFAH<br>SHABIRA
+          </p>
+        </div>
+
+        <!-- Center Column: Portrait -->
+        <div class="flex justify-center items-end self-end order-1 lg:order-2 relative">
+          <div class="w-full max-w-md lg:max-w-lg flex justify-center">
+            <img id="hero-portrait" src="https://lh3.googleusercontent.com/aida/ALJJyrDJWgC70LNCMP2vTAFeVcDU0jU397BQ5gunPDz5Y5QbJaRWjLTFpr-axFQkbZ3Oggj2j7EX7xf_h4QG9CI-Q9F26FupZ4wJqSQmrNrblvcVILNvjFqq69V63JN5ylLR6aSuhHbyPSj79ii6oaKZJUaY_4x70Jr2GX6rT4F23gl9qpvPGtjdjiGkHtERXPNuHCIHYklCLPjjVFL-jT8MS-yMFW0KAZ04pzaVevV-DEsdwnmi6p2u-A" alt="Editorial studio portrait of Alya Rafifah Shabira" class="w-full max-h-[540px] lg:max-h-[640px] object-contain object-bottom mix-blend-multiply">
+          </div>
+        </div>
+
+        <!-- Right Column: Rotating Circular Seal -->
+        <div class="hidden sm:flex justify-end items-end pb-gutter-xl lg:pb-20 order-3">
+          <div class="relative w-28 h-28 flex items-center justify-center" aria-label="Technology, Education, Design monogram seal">
+            <svg viewBox="0 0 120 120" class="w-full h-full seal-spin text-gold-accessible" aria-hidden="true">
+              <defs>
+                <path id="sealPath" d="M 60, 60 m -44, 0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"></path>
+              </defs>
+              <text fill="currentColor" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.4">
+                <textPath href="#sealPath" startOffset="0%">TECHNOLOGY • EDUCATION • DESIGN • </textPath>
+              </text>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <span class="font-display text-headline-md text-gold-accessible leading-none">A</span>
+              <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor" class="text-gold ml-gutter-xs -mt-gutter-md" aria-hidden="true">
+                <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. ORGANIZATIONAL EXPERIENCE & HIGHLIGHTS -->
+      <section id="experience" class="bg-bg-dark text-paper py-section-y">
+        <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl">
+          <!-- Section Header -->
+          <div class="flex items-center gap-gutter-lg mb-gutter-2xl reveal">
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-paper shrink-0">
+              ORGANIZATIONAL EXPERIENCE
+            </span>
+            <div class="flex items-center gap-gutter-sm flex-grow" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="text-gold shrink-0">
+                <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path>
+              </svg>
+              <div class="h-px bg-rule-dark w-full"></div>
+            </div>
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold shrink-0 tabular-nums">
+              2025 – 2026
+            </span>
+          </div>
+
+          <!-- 4-Column Editorial Showcase Grid -->
+          <div id="experience-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-lg reveal">
+            <!-- Card 01 -->
+            <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-modal-index="0" class="work-card group cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold">
+              <div class="relative aspect-[3/4] overflow-hidden bg-dark-surface-container border border-rule-dark">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrCwGMUNvGkcBORPErdbD3JksPRoZzOulX4lrjqsG3qmcY4ArXEEUj0L6RtXdlMo1w5fv2Qgx8hbtPDFzBW-GNyt6SDAz5PXRupn7_197TK3jtwhLEAuhNpv7rO38XSEybcrvsI-nNClgwb-roTna4j5ZDApklVkFGQQI-nKMN5r5-RL2hhX8815xh-Xoe0PasRB-6PqN3QjwDlR3QpsTo0aOLsjuaVHyJ-O4i8MZmffHTOlZg" alt="PIK-R Chairperson educational leadership" class="w-full h-full object-cover transition-transform duration-card-zoom ease-card-zoom group-hover:scale-105">
+                <span data-design-text-token="eyebrow-sm" class="absolute top-gutter-md right-gutter-md font-eyebrow text-eyebrow-sm text-gold uppercase bg-bg-dark/80 px-gutter-sm py-gutter-xs tabular-nums">01</span>
+              </div>
+              <header class="mt-gutter-md text-center flex flex-col items-center gap-gutter-xs">
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-paper uppercase">PIK-R CHAIRPERSON</h3>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-gold uppercase">SMA NEGERI 1 ACEH BARAT DAYA</p>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-paper-muted uppercase tabular-nums">2025 – 2026</p>
+              </header>
+            </div>
+
+            <!-- Card 02 -->
+            <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-modal-index="1" class="work-card group cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold">
+              <div class="relative aspect-[3/4] overflow-hidden bg-dark-surface-container border border-rule-dark">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAl_FdgYj6p-IiwFm2dURAz431JXzjnMEa6FBYum5tr5eu8PsL14CDOJinGMiGSUQ6ISjWZpA3Qdy-P9ErENtjuupdY_LC77nXonxoajdTXgcFvARQlVQIQO-WkwJraJ1VKzcmBWV6kUz35bWHEVgXKwpqrhBy64UG6qyELMlKsePtNSjE0VxuA1PNKb14kKaFUV3AEcCT7s2VdFXtOy_yZc-XeaXdDMDPzUrfefbV0mtbNBXg8IA5B1oew_K4" alt="General Secretary of the Student Council governance" class="w-full h-full object-cover transition-transform duration-card-zoom ease-card-zoom group-hover:scale-105">
+                <span data-design-text-token="eyebrow-sm" class="absolute top-gutter-md right-gutter-md font-eyebrow text-eyebrow-sm text-gold uppercase bg-bg-dark/80 px-gutter-sm py-gutter-xs tabular-nums">02</span>
+              </div>
+              <header class="mt-gutter-md text-center flex flex-col items-center gap-gutter-xs">
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-paper uppercase">GENERAL SECRETARY</h3>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-gold uppercase">STUDENT COUNCIL · SMAN 1 ABDYA</p>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-paper-muted uppercase tabular-nums">2025 – 2026</p>
+              </header>
+            </div>
+
+            <!-- Card 03 -->
+            <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-modal-index="2" class="work-card group cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold">
+              <div class="relative aspect-[3/4] overflow-hidden bg-dark-surface-container border border-rule-dark">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBjTdy5yKhvQK2RynRmRXvPz37GmSSQRaHdB7TwA2AVEy2jjMiUKUDLN14OXTXOuc3F2VAeOd-1wUGfqQ5W0oeeEJGRKCwxmnnc0Jvz9PaHzlbF5jTPlsOKjljT5P11LYFkDTKGTrsUvBUtESdZQyKe7NXnC1jGR08DhXxpylDOkwreBCkUFZ36wGPosANVyNBOFI_8FSiSaQYzWAUrXou-zm11JuNgsjoeBN26M5B-pIGGIqHqEt1othcxK4RNMHo" alt="International Youth Innovation Summit Malaysia and Singapore" class="w-full h-full object-cover transition-transform duration-card-zoom ease-card-zoom group-hover:scale-105">
+                <span data-design-text-token="eyebrow-sm" class="absolute top-gutter-md right-gutter-md font-eyebrow text-eyebrow-sm text-gold uppercase bg-bg-dark/80 px-gutter-sm py-gutter-xs tabular-nums">03</span>
+              </div>
+              <header class="mt-gutter-md text-center flex flex-col items-center gap-gutter-xs">
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-paper uppercase">INTERNATIONAL SUMMIT</h3>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-gold uppercase">YOUTH INNOVATION SUMMIT</p>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-paper-muted uppercase">MALAYSIA &amp; SINGAPORE · 2026</p>
+              </header>
+            </div>
+
+            <!-- Card 04 -->
+            <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-modal-index="3" class="work-card group cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold">
+              <div class="relative aspect-[3/4] overflow-hidden bg-dark-surface-container border border-rule-dark">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBlfb15uIiq7LH2V5ggYWiW-DMYVmGMOwhDYtGBYgqCYiJ44hgFrXQSvkxubzKA-k6N_A4tYizBV4ZXctMcvEzsOkMZc7osGuX22yVixJqanzlZYMTnJ0kmiON8VjbX_iLic56xqVg5Rv5I9Z7oKhy2t7VzQj8KuYVNW-zouL6Zoicl-sRyP0oPpn-NTA7udYvIQUQ4WuOg7I9cP4RBNIj7H1lkIFPFCKkhmSrcN3-Iij8mSgbFGS2x1rB2fm0vyw" alt="ISO and SOE EDUEXPO Science Olympiad Finalist" class="w-full h-full object-cover transition-transform duration-card-zoom ease-card-zoom group-hover:scale-105">
+                <span data-design-text-token="eyebrow-sm" class="absolute top-gutter-md right-gutter-md font-eyebrow text-eyebrow-sm text-gold uppercase bg-bg-dark/80 px-gutter-sm py-gutter-xs tabular-nums">04</span>
+              </div>
+              <header class="mt-gutter-md text-center flex flex-col items-center gap-gutter-xs">
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-paper uppercase">OLYMPIAD FINALIST</h3>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-gold uppercase">ISO &amp; SOE EDUEXPO · MEDICAL</p>
+                <p data-design-text-token="eyebrow-sm" class="font-eyebrow text-eyebrow-sm text-paper-muted uppercase tabular-nums">NATIONAL &amp; INTL · 2025</p>
+              </header>
+            </div>
+          </div>
+
+          <!-- Full Experience Detail Ledger -->
+          <div id="experience-ledger" class="mt-gutter-2xl pt-gutter-2xl border-t border-rule-dark grid grid-cols-1 lg:grid-cols-2 gap-gutter-2xl reveal">
+            <article class="flex flex-col gap-gutter-md">
+              <div class="flex flex-wrap items-baseline justify-between gap-gutter-sm border-b border-rule-dark pb-gutter-md">
+                <div>
+                  <h3 class="font-headline text-headline-md-mobile md:text-headline-md text-paper">PIK-R Chairperson</h3>
+                  <p class="font-eyebrow text-eyebrow uppercase text-gold mt-gutter-xs">SMA Negeri 1 Aceh Barat Daya</p>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-paper-muted tabular-nums">2025 – 2026</span>
+              </div>
+              <ul class="flex flex-col gap-gutter-sm font-body text-body-md text-paper-muted">
+                <li class="flex items-start gap-gutter-sm">
+                  <span class="text-gold shrink-0" aria-hidden="true">•</span>
+                  <span>lead the program dean of Pik r activities</span>
+                </li>
+                <li class="flex items-start gap-gutter-sm">
+                  <span class="text-gold shrink-0" aria-hidden="true">•</span>
+                  <span>Organizing educational activities regarding adolescent health and character development.</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="flex flex-col gap-gutter-md">
+              <div class="flex flex-wrap items-baseline justify-between gap-gutter-sm border-b border-rule-dark pb-gutter-md">
+                <div>
+                  <h3 class="font-headline text-headline-md-mobile md:text-headline-md text-paper">General Secretary of the Student Council</h3>
+                  <p class="font-eyebrow text-eyebrow uppercase text-gold mt-gutter-xs">SMA Negeri 1 Aceh Barat Daya</p>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-paper-muted tabular-nums">2025 – 2026</span>
+              </div>
+              <ul class="flex flex-col gap-gutter-sm font-body text-body-md text-paper-muted">
+                <li class="flex items-start gap-gutter-sm">
+                  <span class="text-gold shrink-0" aria-hidden="true">•</span>
+                  <span>Manage organizational administration, including correspondence and documentation. Prepare proposals, activity reports, and meeting minutes.</span>
+                </li>
+                <li class="flex items-start gap-gutter-sm">
+                  <span class="text-gold shrink-0" aria-hidden="true">•</span>
+                  <span>Coordinate with the Student Council board and the supervising teacher in the implementation of work programs.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SKILLS, CORE STRENGTHS & EDITORIAL QUOTE -->
+      <section id="capabilities" class="bg-bg-cream silk-overlay py-section-y">
+        <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl grid grid-cols-1 lg:grid-cols-[1fr_auto_1.15fr_1.35fr] gap-gutter-xl items-start reveal">
+          <!-- Column 1: Skills & Tools -->
+          <div class="flex flex-col">
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold-accessible mb-gutter-xl">
+              SKILLS &amp; TOOLS
+            </span>
+            <ul class="flex flex-col gap-gutter-lg">
+              <li class="flex items-center gap-gutter-md pb-gutter-md border-b border-rule-light">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="text-gold-accessible shrink-0" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+                </svg>
+                <span data-design-text-token="body-md" class="font-body text-body-md text-ink">Management Skills</span>
+              </li>
+              <li class="flex items-center gap-gutter-md pb-gutter-md border-b border-rule-light">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="text-gold-accessible shrink-0" aria-hidden="true">
+                  <path d="M4 4h16v16H4z"></path><path d="M4 10h16M10 4v16"></path>
+                </svg>
+                <span data-design-text-token="body-md" class="font-body text-body-md text-ink">Microsoft Excel (Intermediate)</span>
+              </li>
+              <li class="flex items-center gap-gutter-md pb-gutter-md border-b border-rule-light">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="text-gold-accessible shrink-0" aria-hidden="true">
+                  <path d="M6 3h9l5 5v13H6z"></path><path d="M14 3v6h6M9 13h6M9 17h4"></path>
+                </svg>
+                <span data-design-text-token="body-md" class="font-body text-body-md text-ink">Microsoft Word ( Intermediate)</span>
+              </li>
+              <li class="flex items-center gap-gutter-md pb-gutter-md border-b border-rule-light">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="text-gold-accessible shrink-0" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M7 12h10"></path>
+                </svg>
+                <span data-design-text-token="body-md" class="font-body text-body-md text-ink">Canva Design</span>
+              </li>
+              <li class="flex items-center gap-gutter-md pb-gutter-md border-b border-rule-light">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="text-gold-accessible shrink-0" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14"></rect><path d="M10 9l5 3-5 3z"></path>
+                </svg>
+                <span data-design-text-token="body-md" class="font-body text-body-md text-ink">Editor Vidio</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vertical Divider Column (Desktop) -->
+          <div class="hidden lg:flex flex-col items-center justify-between self-stretch py-gutter-md" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+            <div class="w-px flex-grow bg-rule-light my-gutter-sm"></div>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+            <div class="w-px flex-grow bg-rule-light my-gutter-sm"></div>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+            <div class="w-px flex-grow bg-rule-light my-gutter-sm"></div>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+          </div>
+
+          <!-- Column 2: Core Competencies -->
+          <div class="flex flex-col">
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold-accessible mb-gutter-xl">
+              CORE STRENGTHS
+            </span>
+            <div class="flex flex-col gap-gutter-xl">
+              <div class="flex items-start gap-gutter-lg">
+                <span class="font-display text-headline-md-mobile md:text-headline-md text-gold-accessible leading-none tabular-nums shrink-0">01</span>
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-eyebrow text-eyebrow uppercase text-ink">CRITICAL THINKING</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-ink-muted">Analytical problem-solving rooted in Informatics Engineering principles.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-gutter-lg">
+                <span class="font-display text-headline-md-mobile md:text-headline-md text-gold-accessible leading-none tabular-nums shrink-0">02</span>
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-eyebrow text-eyebrow uppercase text-ink">COMMUNICATION SKILLS</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-ink-muted">Effective public engagement, coordination, and educational outreach.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-gutter-lg">
+                <span class="font-display text-headline-md-mobile md:text-headline-md text-gold-accessible leading-none tabular-nums shrink-0">03</span>
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-eyebrow text-eyebrow uppercase text-ink">ADMINISTRATION &amp; GOVERNANCE</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-ink-muted">Structured correspondence, proposals, activity reports, and meeting minutes.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-gutter-lg">
+                <span class="font-display text-headline-md-mobile md:text-headline-md text-gold-accessible leading-none tabular-nums shrink-0">04</span>
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-eyebrow text-eyebrow uppercase text-ink">TECHNOLOGY &amp; DESIGN</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-ink-muted">Combining digital tools, video editing, and visual design to create impact.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Editorial Photo & Quote Feature -->
+          <div class="relative aspect-[4/3] overflow-hidden bg-bg-dark">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAQ3uawF9RUETPk_wOqWlZNGeVeHcrPZkxkGPnJ-cTIue4FJNuo25GFUZ-bqp4dXkmpuqF3PY4fvv3mamirCuw_jpG_thL_rO1a77rwYqvnSPTddMhgkhXtYYfiLhZAbANxZhoEq54qE2OMmAJUGJiOKdzp8McOcywjBAO8b4g4xbsGJkN_wGo7792Ccpz1n-Xemo_gkf9o3hlNHsVKXEsr1_ofOMalxxAHzpaYtB5jJxQlfMk3lRiS6gPj" alt="Alya Rafifah Shabira studying in a sunlit architectural space" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-tr from-bg-dark/90 via-bg-dark/45 to-transparent" aria-hidden="true"></div>
+            <div class="absolute bottom-gutter-lg left-gutter-lg right-gutter-lg flex items-end justify-between gap-gutter-md">
+              <div class="flex flex-col max-w-sm">
+                <span class="font-display text-headline-lg text-gold leading-none" aria-hidden="true">“</span>
+                <p class="font-eyebrow text-eyebrow uppercase text-paper leading-relaxed">
+                  WITH A STRONG DRIVE TO LEARN, GROW, AND CONTRIBUTE THROUGH EDUCATION, TECHNOLOGY, AND DESIGN.
+                </p>
+              </div>
+              <span class="font-display text-title-lg text-paper/80 shrink-0 select-none">A.R.S.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. EDUCATION & ACADEMIC JOURNEY -->
+      <section id="education" class="bg-bg-cream border-t border-rule-light py-section-y">
+        <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-gutter-2xl reveal">
+          <!-- Left Column -->
+          <div class="flex flex-col items-start">
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold-accessible">
+              ACADEMIC BACKGROUND
+            </span>
+            <h2 class="font-display text-display-lg-mobile md:text-display-lg text-ink mt-gutter-sm mb-gutter-lg text-balance">
+              Education &amp; Academic Foundation.
+            </h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-ink-muted max-w-prose mb-gutter-xl text-pretty">
+              Currently pursuing S1 Teknik Informatika at Institut Teknologi PLN, building upon foundational schooling and leadership experience in Aceh Barat Daya.
+            </p>
+            <div id="skills-tags" class="flex flex-wrap gap-gutter-sm">
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Management Skills</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Microsoft Excel (Intermediate)</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Microsoft Word ( Intermediate)</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Critical Thinking</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Communication Skills</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Editor Vidio</span>
+              <span class="border border-rule-light px-gutter-md py-gutter-sm font-eyebrow text-eyebrow-sm uppercase text-ink">Canva Design</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Education Timeline Ledger -->
+          <div class="flex flex-col">
+            <span data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow uppercase text-gold-accessible mb-gutter-md">
+              EDUCATION
+            </span>
+            <div id="education-ledger" class="flex flex-col">
+              <div class="border-t border-rule-light py-gutter-lg flex flex-col sm:flex-row sm:items-baseline justify-between gap-gutter-sm">
+                <div>
+                  <h3 class="font-headline text-headline-sm text-ink">Institun Teknologi PLN</h3>
+                  <p class="font-body text-body-sm text-ink-muted mt-gutter-xs">Jurusan S1 Teknik Informatika</p>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums shrink-0">2026 - sekarang</span>
+              </div>
+              <div class="border-t border-rule-light py-gutter-lg flex flex-col sm:flex-row sm:items-baseline justify-between gap-gutter-sm">
+                <div>
+                  <h3 class="font-headline text-headline-sm text-ink">SMA Negeri 1 Aceh Barat Daya</h3>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums shrink-0">2022 - 2026</span>
+              </div>
+              <div class="border-t border-rule-light py-gutter-lg flex flex-col sm:flex-row sm:items-baseline justify-between gap-gutter-sm">
+                <div>
+                  <h3 class="font-headline text-headline-sm text-ink">SMPIT Rabbani Qur’an School</h3>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums shrink-0">2019 – 2022</span>
+              </div>
+              <div class="border-t border-b border-rule-light py-gutter-lg flex flex-col sm:flex-row sm:items-baseline justify-between gap-gutter-sm">
+                <div>
+                  <h3 class="font-headline text-headline-sm text-ink">Mim Muhammadiya</h3>
+                </div>
+                <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums shrink-0">2013 - 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ACHIEVEMENTS & CERTIFICATES -->
+      <section id="achievements" class="bg-bg-cream-dark py-section-y">
+        <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl flex flex-col gap-gutter-2xl">
+          <!-- Achievements Ledger -->
+          <div class="reveal">
+            <div class="flex flex-wrap items-end justify-between gap-gutter-md border-b border-rule-light pb-gutter-md">
+              <h2 class="font-display text-display-lg-mobile md:text-display-lg text-ink">Achievements</h2>
+              <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible flex items-center gap-gutter-xs">
+                COMPETITION HONORS
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold" aria-hidden="true"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+              </span>
+            </div>
+            <div id="achievements-ledger" class="flex flex-col">
+              <div class="border-b border-rule-light py-gutter-lg flex flex-col md:flex-row md:items-baseline justify-between gap-gutter-md">
+                <h3 class="font-headline text-headline-sm text-ink">Finalist–International Science Olympiad (ISO)– 9th EDUEXPO</h3>
+                <div class="flex items-baseline gap-gutter-lg shrink-0">
+                  <span class="font-body text-body-sm text-ink-muted">English Subject | Score: A</span>
+                  <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums">2025</span>
+                </div>
+              </div>
+              <div class="border-b border-rule-light py-gutter-lg flex flex-col md:flex-row md:items-baseline justify-between gap-gutter-md">
+                <h3 class="font-headline text-headline-sm text-ink">Bronze Medal – National Medical Studies Competition</h3>
+                <div class="flex items-baseline gap-gutter-lg shrink-0">
+                  <span class="font-body text-body-sm text-ink-muted">National Competition</span>
+                  <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums">2025</span>
+                </div>
+              </div>
+              <div class="border-b border-rule-light py-gutter-lg flex flex-col md:flex-row md:items-baseline justify-between gap-gutter-md">
+                <h3 class="font-headline text-headline-sm text-ink">Finalist– Student Oliympiad Expo (soe)– EDUEXPO</h3>
+                <div class="flex items-baseline gap-gutter-lg shrink-0">
+                  <span class="font-body text-body-sm text-ink-muted">Chemistry Subject | Score: B+</span>
+                  <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums">2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificates Ledger -->
+          <div class="reveal">
+            <div class="flex flex-wrap items-end justify-between gap-gutter-md border-b border-rule-light pb-gutter-md">
+              <h2 class="font-display text-display-lg-mobile md:text-display-lg text-ink">Certificates</h2>
+              <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible flex items-center gap-gutter-xs">
+                INTERNATIONAL RECOGNITION
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="text-gold" aria-hidden="true"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path></svg>
+              </span>
+            </div>
+            <div id="certificates-ledger" class="flex flex-col">
+              <div class="border-b border-rule-light py-gutter-lg flex flex-col md:flex-row md:items-baseline justify-between gap-gutter-md">
+                <h3 class="font-headline text-headline-sm text-ink max-w-2xl">
+                  Certification Of PartiCiPation - Selection Process Internasional Youth innavation Summit ( Capter Malaysia &amp; Singapore)
+                </h3>
+                <div class="flex items-baseline gap-gutter-lg shrink-0">
+                  <span class="font-body text-body-sm text-ink-muted">Global Youthpreneur Nusantara Foundation</span>
+                  <span class="font-eyebrow text-eyebrow uppercase text-gold-accessible tabular-nums">2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. LET'S CONNECT & FOOTER -->
+    <footer id="contact" class="bg-bg-dark text-paper py-section-y">
+      <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.3fr_auto_1.1fr_1fr_0.8fr] gap-gutter-xl items-start reveal">
+        <!-- Column 1 -->
+        <div class="flex flex-col items-start">
+          <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase text-paper">
+            LET&#39;S CREATE<br>SOMETHING<br>MEANINGFUL
+          </h2>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gold mt-gutter-lg" aria-hidden="true">
+            <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"></path>
+          </svg>
+        </div>
+
+        <!-- Vertical Hairline Divider -->
+        <div class="hidden lg:block w-px h-full bg-rule-dark self-stretch" aria-hidden="true"></div>
+
+        <!-- Column 2: Contact Me -->
+        <div class="flex flex-col items-start">
+          <span class="font-eyebrow text-eyebrow uppercase text-gold mb-gutter-lg">CONTACT ME</span>
+          <div id="contact-details" class="flex flex-col gap-gutter-md font-body text-body-md text-paper-muted">
+            <a href="tel:+6285382888921" class="hover:text-gold transition-colors duration-hover-link tabular-nums">+6285382888921</a>
+            <a href="mailto:alya.shabira1@gmail.com" class="hover:text-gold transition-colors duration-hover-link">alya.shabira1@gmail.com</a>
+            <p class="text-paper-muted leading-relaxed">desa pinang kec. susoh kabupaten aceh barat daya</p>
+          </div>
+        </div>
+
+        <!-- Column 3: Quick Navigation & Affiliation -->
+        <div class="flex flex-col items-start">
+          <span class="font-eyebrow text-eyebrow uppercase text-gold mb-gutter-lg">ACADEMIC &amp; LINKS</span>
+          <ul class="flex flex-col gap-gutter-sm font-eyebrow text-eyebrow uppercase text-paper-muted mb-gutter-lg">
+            <li><a href="#experience" class="hover:text-gold transition-colors duration-hover-link">Experience</a></li>
+            <li><a href="#capabilities" class="hover:text-gold transition-colors duration-hover-link">Capabilities</a></li>
+            <li><a href="#education" class="hover:text-gold transition-colors duration-hover-link">Education</a></li>
+            <li><a href="#achievements" class="hover:text-gold transition-colors duration-hover-link">Achievements</a></li>
+          </ul>
+          <p class="font-body text-body-sm text-paper-muted">Institut Teknologi PLN — S1 Teknik Informatika</p>
+        </div>
+
+        <!-- Column 4: Editorial Monogram Watermark -->
+        <div class="flex items-center justify-start lg:justify-end self-center">
+          <span class="monogram-watermark select-none" aria-hidden="true">A/S</span>
+        </div>
+      </div>
+
+      <!-- Sub-Footer Bar -->
+      <div class="w-full max-w-7xl mx-auto px-gutter-lg md:px-gutter-2xl mt-gutter-2xl pt-gutter-lg border-t border-rule-dark flex flex-col sm:flex-row items-center justify-between gap-gutter-md font-eyebrow text-eyebrow-sm uppercase text-paper-muted">
+        <span class="tabular-nums">© 2026 ALYA RAFIFAH SHABIRA</span>
+        <span>ALL RIGHTS RESERVED</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Editorial Detail Modal -->
+  <dialog id="experience-modal" data-component-id="modal-standard" data-component-type="modal" data-component-variant="standard" aria-labelledby="modal-title" aria-describedby="modal-subtitle modal-body" class="bg-light-surface text-ink border border-rule-light p-gutter-xl max-w-xl w-full mx-auto my-auto">
+    <header class="flex items-start justify-between gap-gutter-md pb-gutter-md border-b border-rule-light">
+      <div class="flex flex-col gap-gutter-xs">
+        <h2 id="modal-title" data-design-text-token="headline-md" class="font-headline text-headline-md-mobile md:text-headline-md text-ink">Experience Detail</h2>
+        <p id="modal-subtitle" data-design-text-token="eyebrow" class="font-eyebrow text-eyebrow text-gold-accessible uppercase">Organization · Period</p>
+      </div>
+      <button id="modal-close-btn" type="button" aria-label="Close dialog" class="inline-flex items-center justify-center w-10 h-10 border border-rule-light text-ink hover:border-gold hover:text-gold-accessible transition-colors duration-hover-link focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold-accessible">
+        <span class="material-symbols-outlined text-body-md" aria-hidden="true">close</span>
+      </button>
+    </header>
+    <div id="modal-body" class="py-gutter-lg flex flex-col gap-gutter-md font-body text-body-md text-ink-muted"></div>
+    <footer class="pt-gutter-md border-t border-rule-light flex justify-end">
+      <button id="modal-done-btn" type="button" class="px-gutter-lg py-gutter-sm border border-ink text-ink font-eyebrow text-eyebrow uppercase hover:bg-gold hover:border-gold hover:text-light-on-primary transition-colors duration-hover-link focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold-accessible">
+        <span data-design-text-token="eyebrow">Close Ledger</span>
+      </button>
+    </footer>
+  </dialog>
+
+  <script>
+    (function () {
+      const DEFAULT_DATA = {
+        highlights: [
+          {
+            title: "PIK-R Chairperson",
+            subtitle: "SMA Negeri 1 Aceh Barat Daya · 2025 – 2026",
+            bullets: [
+              "lead the program dean of Pik r activities",
+              "Organizing educational activities regarding adolescent health and character development."
+            ]
+          },
+          {
+            title: "General Secretary of the Student Council",
+            subtitle: "SMA Negeri 1 Aceh Barat Daya · 2025 – 2026",
+            bullets: [
+              "Manage organizational administration, including correspondence and documentation. Prepare proposals, activity reports, and meeting minutes.",
+              "Coordinate with the Student Council board and the supervising teacher in the implementation of work programs."
+            ]
+          },
+          {
+            title: "International Youth Innovation Summit",
+            subtitle: "Global Youthpreneur Nusantara Foundation · 2026",
+            bullets: [
+              "Certification Of PartiCiPation - Selection Process Internasional Youth innavation Summit ( Capter Malaysia & Singapore)"
+            ]
+          },
+          {
+            title: "Academic Olympiad Honors",
+            subtitle: "National & International · 2025",
+            bullets: [
+              "Finalist–International Science Olympiad (ISO)– 9th EDUEXPO — English Subject | Score: A",
+              "Bronze Medal – National Medical Studies Competition — National Competition",
+              "Finalist– Student Oliympiad Expo (soe)– EDUEXPO — Chemistry Subject | Score: B+"
+            ]
+          }
+        ]
+      };
+
+      function escapeHTML(str) {
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+      }
+
+      const modal = document.getElementById('experience-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalSubtitle = document.getElementById('modal-subtitle');
+      const modalBody = document.getElementById('modal-body');
+      const closeBtn = document.getElementById('modal-close-btn');
+      const doneBtn = document.getElementById('modal-done-btn');
+
+      function openHighlightModal(index) {
+        const item = DEFAULT_DATA.highlights[index];
+        if (!item || !modal) return;
+        modalTitle.textContent = item.title;
+        modalSubtitle.textContent = item.subtitle;
+        modalBody.innerHTML = '<ul class="flex flex-col gap-gutter-sm">' +
+          item.bullets.map(function (b) {
+            return '<li class="flex items-start gap-gutter-sm"><span class="text-gold-accessible">•</span><span>' + escapeHTML(b) + '</span></li>';
+          }).join('') +
+          '</ul>';
+        if (typeof modal.showModal === 'function') {
+          modal.showModal();
+        }
+      }
+
+      document.querySelectorAll('.work-card').forEach(function (card) {
+        card.addEventListener('click', function () {
+          openHighlightModal(Number(card.getAttribute('data-modal-index')));
+        });
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openHighlightModal(Number(card.getAttribute('data-modal-index')));
+          }
+        });
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      if (doneBtn) doneBtn.addEventListener('click', function () { modal.close(); });
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) modal.close();
+        });
+      }
+
+      // Scroll reveal observer
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        reveals.forEach(function (el) { io.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add('in'); });
+      }
+    })();
+  </script>
+
+
+</body></html>
