@@ -62,8 +62,7 @@ export const PORTFOLIO_DATA = {
     about:
       'I am a first-year Informatics Engineering student with a strong drive to learn, grow, and contribute through education. I actively participate in various organizational activities that have honed my communication, teamwork, and sense of responsibility. I also have a keen interest in technology and design.',
     signatureLines: ['ALYA RAFIFAH', 'SHABIRA'],
-    portraitUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrDJWgC70LNCMP2vTAFeVcDU0jU397BQ5gunPDz5Y5QbJaRWjLTFpr-axFQkbZ3Oggj2j7EX7xf_h4QG9CI-Q9F26FupZ4wJqSQmrNrblvcVILNvjFqq69V63JN5ylLR6aSuhHbyPSj79ii6oaKZJUaY_4x70Jr2GX6rT4F23gl9qpvPGtjdjiGkHtERXPNuHCIHYklCLPjjVFL-jT8MS-yMFW0KAZ04pzaVevV-DEsdwnmi6p2u-A',
+    portraitUrl: '/src/assets/images/regenerated_image_1795249400439.jpg',
     portraitAlt: 'Editorial studio portrait of Alya Rafifah Shabira',
   },
   highlights: [
